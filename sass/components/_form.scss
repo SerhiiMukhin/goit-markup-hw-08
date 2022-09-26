@@ -1,0 +1,118 @@
+.form-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+}
+
+.form {
+    justify-content: center;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area__label {
+    color: var(--secondary-text-color);
+}
+
+.input-area__label:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-field__input {
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: outline var(--hover-focus-transition);
+
+    &:focus, {
+        outline: 1px solid var(--accent-color);
+        }
+}
+
+.input-field__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill var(--hover-focus-transition);
+
+    .input-field__input:focus + & {
+            fill: var(--accent-color);
+        }
+}
+
+.input-area__textarea {
+    margin-bottom: 20px;
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:focus {
+        outline: 1px solid var(--accent-color);
+        }
+}
+
+.confirm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.confirm__checkbox-label {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    line-height: calc(24 / 14);
+}
+
+.checkbox {
+    appearance: none;
+}
+
+.checkbox__icon {
+    margin-right: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: opacity var(--hover-focus-transition);
+}
+
+.checkbox__icon--checked {
+    opacity: 0;
+}
+
+.checkbox__icon--unchecked {
+    opacity: 1;
+}
+
+.checkbox:checked+.checkbox__icon .checkbox__icon--checked {
+    opacity: 1;
+}
+
+.checkbox:checked+.checkbox__icon .checkbox__icon--unchecked {
+    opacity: 0;
+}
+
+.checkbox:focus+.checkbox__icon {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 1px;
+}
+
+
+.confirm__link {
+    text-decoration: underline;
+    color: var(--accent-color);
+}

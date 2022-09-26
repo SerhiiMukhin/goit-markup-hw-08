@@ -1,0 +1,16 @@
+.work-cardset__card {
+    position: relative;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.work-cardset__card-description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 27px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    color: var(--tertiary-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

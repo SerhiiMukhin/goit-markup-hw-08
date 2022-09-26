@@ -1,0 +1,19 @@
+.features-section {
+    padding-bottom: 0px;
+}
+
+.features-cardset__card {
+    width: calc((100% - 90px) / 4);
+}
+
+.features-cardset__card-thumb {
+    background-color: var(--tertiary-background-color);
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.features-cardset__card-text {
+    margin-top: 10px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}

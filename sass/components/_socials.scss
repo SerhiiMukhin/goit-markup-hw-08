@@ -1,0 +1,25 @@
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials__link {
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--icon-border);
+    transition: background-color var(--hover-focus-transition), fill var(--hover-focus-transition);
+
+    &:hover,
+    &:focus {
+        fill: var(--primary-background-color);
+        background-color: var(--accent-color);
+        }
+}
+
+.socials__link--dark-theme {
+    fill: var(--primary-background-color);
+    background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,20 @@
+:root {
+    /* Colors */
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #2f303a;
+    --tertiary-background-color: #f5f4fa;
+    --accent-color: #2196f3;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --tertiary-text-color: #ffffff;
+    --secondary-text-color-transparency: rgba(255, 255, 255, 0.6);
+    --logo-color: #000000;
+    --cards-border-color: #eeeeee;
+    --header-border-bottom: #ececec;
+    --active-button: #188ce8;
+    --icon-border: #afb1b8;
+    --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    /* Effects */
+    --hover-focus-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

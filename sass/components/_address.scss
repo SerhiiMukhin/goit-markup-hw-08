@@ -1,0 +1,23 @@
+.address-list__location {
+    margin-top: 0px;
+    margin-bottom: 9px;
+    text-decoration: none;
+    font-style: normal;
+    line-height: calc(24 / 14);
+    color: var(--tertiary-text-color);
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-list__link {
+    font-style: normal;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color-transparency);
+    transition: color var(--hover-focus-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);}
+    }
