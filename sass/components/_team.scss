@@ -1,5 +1,13 @@
+.team-container {
+    overflow: visible;
+}
+
 .team-section {
     background-color: var(--tertiary-background-color);
+}
+
+.team-cardset {
+    flex-direction: column;
 }
 
 .team-cardset__card {

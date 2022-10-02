@@ -1,5 +1,19 @@
+.clients-container {
+    overflow: visible;
+}
+
+.clients-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .clients-list__item {
-    flex-basis: calc((100% - 150px) / 6);
+    flex-basis: calc((100% - 60px) / 2);
+
+    //desktop
+    // flex-basis: calc((100% - 150px) / 6);
 }
 
 .clients-list__client-link {

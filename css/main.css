@@ -690,8 +690,19 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.team-container {
+  overflow: visible;
+}
+
 .team-section {
   background-color: var(--tertiary-background-color);
+}
+
+.team-cardset {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .team-cardset__card {
@@ -753,9 +764,25 @@ p {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.clients-container {
+  overflow: visible;
+}
+
+.clients-list {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .clients-list__item {
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
 }
 
 .clients-list__client-link {
