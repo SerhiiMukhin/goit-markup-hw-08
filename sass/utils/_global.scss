@@ -8,29 +8,52 @@ body {
 }
 
 .container {
-  @media screen and(max-width: 480px) {
-      max-width: 480px;
+
+  //global//
+
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  // margin: 0 auto;
+
+  //mobile//
+
+  @media screen and(min-width: 480px) {
+      max-width: 480px;
   }
 
+  //tablet//
 
-    //desktop
-    // width: 1200px;
+  @media screen and(min-width: 768px) {
+    max-width: 768px;
+  }
+
+  //desktop//
+
+  @media screen and(min-width: 1200px) {
+    max-width: 1200px;
+  }
+
 }
 
 .section {
+
+  //global//
+
   margin-left: auto;
   margin-right: auto;
+
   padding-top: 60px;
   padding-bottom: 60px;
-}
+  
 
-  //desktop
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+  // desktop//
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .button {
     display: flex;
@@ -64,18 +87,21 @@ body {
 }
 
 .section-title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: calc(33 / 28);
-  text-align: center;
+    margin-bottom: 30px;
 
-  //desktop
-  // margin-bottom: 50px;
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: calc(42 / 36);
-  // text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    text-align: center;
+
+  //desktop//
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+
 }
 
 .cardset {
