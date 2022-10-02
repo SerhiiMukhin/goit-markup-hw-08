@@ -1,24 +1,23 @@
 .header {
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 500;
-    border-bottom: 1px solid var(--header-border-bottom);
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: 500;
+	border-bottom: 1px solid var(--header-border-bottom);
 }
 
 .header__container {
-    max-width: 480px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	//global
 
-    @media screen and(min-width: 768px) {
-        max-width: 768px;
-    }
+	position: relative;
+	display: flex;
+	align-items: center;
 
+	@media screen and(max-width: 768px) {
+        justify-content: space-between;
+	}
 
-    //desktop
-    // display: flex;
-    // align-items: center;
+	@media screen and(min-width: 768px) {
+		max-width: 768px;
+	}
+
 }
-
