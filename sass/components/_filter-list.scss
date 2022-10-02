@@ -1,8 +1,12 @@
 .filter-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
-    margin-bottom: 50px;
+
+    margin-bottom: 40px;
+
+    //desktop
+        // justify-content: center;
 }
 
 .filter-list__button {
@@ -19,6 +23,10 @@
     transition: color var(--hover-focus-transition), background-color var(--hover-focus-transition),
     box-shadow var(--hover-focus-transition);
 
+    &:first-child {
+        padding: 6px 25px;
+    }
+
     &:hover,
     &:focus {
         color: var(--tertiary-text-color);
@@ -26,6 +34,11 @@
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         cursor: pointer;
         }
+}
+
+
+.filter-list__item:first-child {
+    margin-bottom: 15px;
 }
 
 .filter-list__item:not(:last-child) {

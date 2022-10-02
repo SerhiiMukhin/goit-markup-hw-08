@@ -933,11 +933,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter-list__button {
@@ -955,6 +954,9 @@ p {
   transition: color var(--hover-focus-transition), background-color var(--hover-focus-transition), box-shadow var(--hover-focus-transition);
   transition: color var(--hover-focus-transition), background-color var(--hover-focus-transition), box-shadow var(--hover-focus-transition), -webkit-box-shadow var(--hover-focus-transition);
 }
+.filter-list__button:first-child {
+  padding: 6px 25px;
+}
 .filter-list__button:hover, .filter-list__button:focus {
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
@@ -963,13 +965,16 @@ p {
   cursor: pointer;
 }
 
+.filter-list__item:first-child {
+  margin-bottom: 15px;
+}
+
 .filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
 .portfolio-card {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
   -webkit-transition: -webkit-box-shadow var(--hover-focus-transition);
   transition: -webkit-box-shadow var(--hover-focus-transition);
   transition: box-shadow var(--hover-focus-transition);

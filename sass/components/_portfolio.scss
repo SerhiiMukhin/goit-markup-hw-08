@@ -1,5 +1,5 @@
 .portfolio-card {
-    flex-basis: calc((100% - 60px) / 3);
+    width: 100%;
     transition: box-shadow var(--hover-focus-transition);
 
     &:hover,
