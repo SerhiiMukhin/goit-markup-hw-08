@@ -6,6 +6,78 @@
 }
 
 .header__container {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+
+    //desktop
+    // display: flex;
+    // align-items: center;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu__icon {
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-background-color);
+
+    transform: translateX(100%);
+    transition: var(--hover-focus-transition);
+
+    & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-socials {
+    display: flex;
+}
+
+.menu-socials__item {
+    padding: 0 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__link {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--accent-color);
+
 }

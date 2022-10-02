@@ -1,14 +1,29 @@
 .features-section {
-    padding-bottom: 0px;
+
+    //desktop
+    // padding-bottom: 0px;
+}
+
+.features-cardset {
+
 }
 
 .features-cardset__card {
-    width: calc((100% - 90px) / 4);
+    width: 100%;
+
+    //desktop
+    // width: calc((100% - 90px) / 4);
+}
+
+.features-cardset__card-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features-cardset__card-thumb {
     background-color: var(--tertiary-background-color);
-    padding: 25px 100px;
+    padding: 25px;
     margin-bottom: 30px;
 }
 

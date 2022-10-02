@@ -8,18 +8,27 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  overflow: hidden;
+
+    //desktop
+    // width: 1200px;
 }
 
 .section {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+  //desktop
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
 .button {
     display: flex;
@@ -64,6 +73,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and(max-width: 480px) {
+      flex-direction: column;   
+    }
 }
 
 .title--uppercase {
@@ -84,4 +97,4 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+  }
