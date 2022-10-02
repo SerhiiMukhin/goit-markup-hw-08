@@ -9,7 +9,7 @@
 
 
 .clients-list__item {
-    flex-basis: calc((100% - 60px) / 2);
+    width: calc((100% - 60px) / 2);
 
     //desktop
     // flex-basis: calc((100% - 150px) / 6);
