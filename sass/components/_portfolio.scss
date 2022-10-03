@@ -1,4 +1,5 @@
 .portfolio-card {
+    display: flex;
     width: 100%;
     transition: box-shadow var(--hover-focus-transition);
 
@@ -6,13 +7,23 @@
     &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+    @media screen and(min-width:768px) {
+        width: calc((100% - 30px) / 2);
+    }
 }
 
-
+.portfolio-card__link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 .portfolio-card__description {
     padding: 20px 24px;
     border: 1px solid var(--cards-border-color);
+
+    flex-grow: 1;
 }
 
 .portfolio-card__thumb {
