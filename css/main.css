@@ -1084,9 +1084,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
@@ -1094,6 +1093,8 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1104,25 +1105,16 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .address-follow-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .address-container {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .address-container {
+    margin-right: 165px;
+  }
+}
+
 .address-list__location {
   text-decoration: none;
   font-style: normal;
@@ -1146,8 +1138,10 @@ p {
 }
 
 .subscribe {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  width: 100%;
+  width: 450px;
 }
 
 .subscribe__label {
@@ -1214,7 +1208,16 @@ p {
 
 .follow {
   text-align: center;
-  margin-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
+  .follow {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .follow {
+    margin-top: 5px;
+  }
 }
 
 .follow__title {

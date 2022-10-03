@@ -9,21 +9,15 @@
 .footer-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
 
     @media screen and(min-width:768px) {
         flex-direction: row;
+        padding-left: 76px;
+        padding-right: 89px;
     }
 
      @media screen and(min-width:1200px) {
          align-items: baseline;
     }   
-}
-
-.address-follow-container {
-    @media screen and(min-width:768px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
