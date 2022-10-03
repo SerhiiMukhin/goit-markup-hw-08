@@ -7,8 +7,12 @@
     @media screen and(min-width: 480px) {
         width: 450px;
     }
-//desktop
-    // margin-left: 93px;
+
+    @media screen and(min-width:1200px) {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
 }
 
 .subscribe__label {
@@ -21,6 +25,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+            @media screen and(min-width:1200px) {
+  flex-wrap: nowrap;
+    }
 }
 
 .subscribe__input {
@@ -43,21 +51,12 @@
         line-height: calc(20 / 16);
     }
 
-
-    //desktop
-    // margin-right: 12px;
-    // padding: 15px 16px;
-    // width: 350px;
-    // background-color: transparent;
-    // border: 1px solid rgba(255, 255, 255, 0.3);
-    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    // border-radius: 4px;
-    // outline: none;
-    // caret-color: var(--primary-background-color);
-
-    // &::placeholder {
-    //     color: rgba(255, 255, 255, 0.6);
-    //     line-height: calc(20 / 16);
+        @media screen and(min-width:1200px) {
+        min-width: 350px;
+        margin-right: 12px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
         }
 
 .subscribe__icon {

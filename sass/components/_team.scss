@@ -39,8 +39,9 @@
     padding-top: 30px;
     padding-bottom: 24px;
 
-    //desktop
-    // padding: 30px 32px;
+    @media screen and(min-width:1200px) {
+        padding: 30px 32px;
+    }
 }
 
 .team-cardset__card-title {

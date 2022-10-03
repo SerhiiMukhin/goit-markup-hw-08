@@ -1,23 +1,30 @@
 .header {
-	margin-right: auto;
-	margin-left: auto;
 	font-weight: 500;
+
 	border-bottom: 1px solid var(--header-border-bottom);
 }
 
 .header__container {
-	//global
 
+	//global
 	position: relative;
 	display: flex;
 	align-items: center;
 
+
+	//mobile
 	@media screen and(max-width: 767px) {
         justify-content: space-between;
+		max-width: 480px;
 	}
 
+	//tablet
 	@media screen and(min-width: 768px) {
 		max-width: 768px;
 	}
 
+	//desktop
+	@media screen and(min-width: 1200px) {
+		max-width: 1200px;
+	}	
 }

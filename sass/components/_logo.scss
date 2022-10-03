@@ -1,27 +1,37 @@
 .logo {
+
+    //global
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    //mobile
     padding-top: 16px;
     padding-bottom: 16px;
-    font-family: 'Raleway', sans-serif;
+
     font-size: 24px;
-    font-weight: 700;
     line-height: calc(28 / 24);
-    letter-spacing: 0.03em;
+
     color: var(--logo-color);
 
     //tablet
     @media screen and(min-width: 768px) {
+
+        margin-right: 88px;
+
         padding-top: 26px;
         padding-bottom: 26px;
-        margin-right: 88px;
     }
 
     //desktop
     @media screen and(min-width: 1200px) {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 92px;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+        
+        margin-right: 92px;
+
+        padding-top: 24px;
+        padding-bottom: 25px;
+        
+        font-size: 26px;
+        line-height: calc(31 / 26);
     }
 
 }
@@ -32,10 +42,13 @@
 
 .logo--light-theme {
     display: block;
+
     margin-right: 0;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 20px;
+
     padding-top: 0px;
     padding-bottom: 0px;
+    
     color: var(--tertiary-text-color);
 }

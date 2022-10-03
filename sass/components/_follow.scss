@@ -9,10 +9,13 @@ text-align: center;
     margin-top: 5px;
 }
 
-}
+    @media screen and(min-width:1200px) {
+        text-align: left;
+        margin-top: 12px;
+        margin-right: 90px;
+    }
 
-    //desktop
-    // margin-left: 70px;
+}
 
 .follow__title {
     margin-bottom: 20px;
