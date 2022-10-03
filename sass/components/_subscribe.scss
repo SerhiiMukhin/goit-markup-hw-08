@@ -2,7 +2,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 450px;
+    width: 100%;
+
+    @media screen and(min-width: 480px) {
+        width: 450px;
+    }
 //desktop
     // margin-left: 93px;
 }

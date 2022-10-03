@@ -1141,7 +1141,12 @@ p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 450px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .subscribe {
+    width: 450px;
+  }
 }
 
 .subscribe__label {
@@ -1364,7 +1369,7 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: calc(100% - 30px);
+  width: 450px;
   padding: 40px;
   background-color: var(--primary-background-color);
   -webkit-transition: -webkit-transform var(--hover-focus-transition);
