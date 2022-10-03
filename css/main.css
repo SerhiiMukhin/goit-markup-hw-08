@@ -495,7 +495,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -559,8 +559,8 @@ p {
   width: 100vw;
   height: 100vh;
   background-color: var(--primary-background-color);
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
   -webkit-transition: var(--hover-focus-transition);
   transition: var(--hover-focus-transition);
 }
@@ -927,6 +927,14 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .team-cardset {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .team-cardset__card {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
@@ -935,6 +943,23 @@ p {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .team-cardset__card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-cardset__card {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-cardset__card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team-cardset__card-thumb {
