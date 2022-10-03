@@ -9,10 +9,15 @@
 
 
 .clients-list__item {
-    width: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
 
-    //desktop
-    // flex-basis: calc((100% - 150px) / 6);
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+        }
 }
 
 .clients-list__client-link {
@@ -31,8 +36,6 @@
         outline-color: var(--accent-color);
     }
 }
-
-
 
 .clients-list__client-logo {
     fill: currentColor;
