@@ -852,8 +852,27 @@ p {
   color: var(--tertiary-text-color);
 }
 
-.features-cardset__card {
-  width: 100%;
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features-cardset__card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features-cardset__card {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-cardset__card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features-cardset__card-icon {

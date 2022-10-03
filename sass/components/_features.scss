@@ -1,18 +1,24 @@
 .features-section {
-
-    //desktop
-    // padding-bottom: 0px;
+    @media screen and(min-width: 1200px) {
+        padding-bottom: 0px;
 }
+    }
 
 .features-cardset {
-
 }
 
 .features-cardset__card {
-    width: 100%;
+    @media screen and(min-width: 480px) {
+            width: 100%;
+    }
 
-    //desktop
-    // width: calc((100% - 90px) / 4);
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+        @media screen and(min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+}
 }
 
 .features-cardset__card-icon {
