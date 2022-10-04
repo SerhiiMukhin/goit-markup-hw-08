@@ -9,16 +9,16 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    @media screen and(min-width:768px)  {
+    @media screen and(min-width:768px) {
         flex-direction: row;
-        padding-left: 76px;
-        padding-right: 89px;
+        justify-content: space-around;
     }
 
      @media screen and(min-width:1200px) {
+        justify-content: space-between;
         padding-left: 15px;
         padding-right: 15px;
-        width: 1200px;
+        max-width: 1200px;
         align-items: baseline;
     }   
 }

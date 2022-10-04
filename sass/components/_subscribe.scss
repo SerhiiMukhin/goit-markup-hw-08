@@ -2,13 +2,13 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 100%;
 
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 480px) and(max-width:767px) {
         width: 450px;
     }
 
     @media screen and(min-width:1200px) {
+        min-width: 450px;
         margin-left: 0;
         margin-right: 0;
         text-align: left;
