@@ -706,6 +706,7 @@ p {
 
 .nav__link {
   font-size: 40px;
+  font-weight: 500;
   line-height: 1.175;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--hover-focus-transition);
@@ -740,9 +741,11 @@ p {
   }
 }
 
-.contacts {
-  padding-top: 21px;
-  padding-bottom: 21px;
+@media screen and (max-width: 767px) {
+  .contacts {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -750,16 +753,13 @@ p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -780,11 +780,12 @@ p {
     color: var(--accent-color);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
   }
 }
 
@@ -801,7 +802,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -826,6 +827,13 @@ p {
     vertical-align: middle;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .contacts__link {
@@ -844,6 +852,13 @@ p {
   }
   .contacts__link:hover, .contacts__link:focus {
     color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 1.1428571429;
   }
 }
 
@@ -901,7 +916,8 @@ p {
 
 @media screen and (min-width: 480px) {
   .features-cardset__card {
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -912,7 +928,8 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .features-cardset__card {
-    width: calc((100% - 90px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
