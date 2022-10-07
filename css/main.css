@@ -439,9 +439,14 @@ body {
   line-height: 1.1428571429;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .title--uppercase {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title--uppercase {
+    text-align: left;
   }
 }
 
@@ -498,7 +503,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
