@@ -600,9 +600,6 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .menu-socials {
@@ -612,7 +609,7 @@ p {
 
 .menu-socials__item {
   position: relative;
-  padding: 0 10px;
+  margin-right: 20px;
 }
 
 .menu-socials__item:not(:last-child)::after {
@@ -622,7 +619,7 @@ p {
   width: 1px;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -10px;
   background-color: rgba(33, 33, 33, 0.2);
 }
 
@@ -919,7 +916,6 @@ p {
 @media screen and (min-width: 768px) {
   .hero-section {
     padding: 118px 189px;
-    height: 400px;
   }
 }
 @media screen and (min-width: 769px) {
