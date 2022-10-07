@@ -921,6 +921,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
+    max-width: 1600px;
     padding: 200px;
     height: 600px;
   }
